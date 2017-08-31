@@ -1,9 +1,9 @@
-// This is a single line comment
+// This is a single line comment. Comments are not run as code.
 
 import UIKit
 
 /*
- This is a multiline comment.
+ This is a multiline comment. It can be very long.
  
  When we import UIKit or Foundation, we're telling XCode "go fetch this
  code someone else wrote so we can use it for ourselves".
@@ -17,7 +17,7 @@ import UIKit
 
 print("Let's go!")
 
-// Print is a built-in function. We get it from importing UIKit.
+// Print is a built-in function. We get it from importing UIKit. It lets us view text or results in the console.
 
 let constant = "This should never change"
 var variable = "This might get changed"
