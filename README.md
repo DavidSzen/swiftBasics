@@ -1,6 +1,14 @@
 # swiftBasics
 A Swift playground covering basics for code newbies
 
+To use -- 
+
+Hit the download button on the top, and select download as .zip. Open the zip file to get a folder containing the Playground and supporting files. Open in Desktop is for if you have Github Desktop.
+
+or
+
+Go to the file Contents.Swift and copy/paste directly into an open Playground
+
 The Playground provides a swift overview of:
 
 * Commenting
