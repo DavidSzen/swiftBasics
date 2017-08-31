@@ -24,16 +24,15 @@ var variable = "This might get changed"
 
 // Var and let tell others what we intend to do later with the values they contain.
 
-var trueOrFalse: Bool
+var trueOrFalse: Bool = true
 
-// We use type declarations to state what's going to go inside our constants & variables
+// The word after the colon indicates the variable's Type. We use type declarations to state what's going to go inside our constants & variables.
 
 var numberOne: Int
 
 // We can declare a variable or constant, then give it a value (assign it) later.
 
 numberOne = 1
-
 numberOne == 1
 
 // We assign things using a single equals sign. We compare things using a double equals.
@@ -54,7 +53,7 @@ trueOrFalse = false
 trueOrFalse = 10 < 1000
 trueOrFalse = 20 >= 21
 
-// Bools are true, false, or any operation that results in a true or a false
+// Bools are true, false, or any operation that results in a true or a false, like > (greater than) or >= (greater than or equal to)
 
 trueOrFalse = !trueOrFalse
 
@@ -86,20 +85,47 @@ if numberOne == 1 {
 
 // We use conditionals and comparisons inside our if statements. If the conditional is true, then the if block runs. If the conditional is false, then the else block runs
 
-switch numberOne {
-case 0: print("I'm a zero.")
-case 1: print("I'm number one!")
-default: "I don't know who I am"
+switch trueOrFalse {
+case true:
+    print("I'm true")
+case false:
+    print("I'm false")
 }
 
 // Switch statements are another way to have branching paths in our code. They check if a variable has a certain value, then do something if it does.
+
+switch numberOne {
+case 0:
+    print("I'm a zero.")
+case 1:
+    print("I'm number one!")
+default: "I don't know who I am"
+}
+
+// Switch statements need to cover all possible values for the variable they're switching on. If we're only interested in a few possibilities, we can use a default case to cover everything else
+
+if numberOne == 0 {
+    print("I'm a zero.")
+} else if numberOne == 1 {
+    print("I'm number one!")
+} else if numberOne == 2 {
+    print("I'm second.")
+} else if  numberOne == 3 {
+    print("I'm third.")
+} else if numberOne == 4 {
+    print("I'm fourth!")
+} else {
+    print("Quit it.")
+}
+
+// We can use else if to indicate multiple paths, but switch statements are often easier to read once we get past 3 possibilities...
 
 while numberOne == 1 {
     print("Still true")
     numberOne = 0
 }
 
-// We use conditionals for our while loops. As long as the condition is true, it keeps running.
+// We also use conditionals for our while loops. As long as the condition is true, it keeps running.
 
 for number in 5...9 {
     print(number - 4 )
