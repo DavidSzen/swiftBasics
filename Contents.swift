@@ -65,7 +65,7 @@ trueOrFalse = 10 < 1000 && 1000 < 1001
 trueOrFalse = 20 >= 21 && 13 != 13
 trueOrFalse = 20 >= 21 && 1000 < 1001
 
-// The && means 'and'. And statements are only true if both sides have the same truth value.
+// The && means 'and'. And statements are only true if both sides are true.
 
 trueOrFalse = 10 < 1000 || 20 >= 21
 trueOrFalse = 10 < 1000 || 1000 < 1001
