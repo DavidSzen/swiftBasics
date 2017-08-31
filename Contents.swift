@@ -309,11 +309,10 @@ let petTheDogAgain = accessThis[accessThis.index(accessThis.startIndex, offsetBy
  2. Use String.index(i: , offsetBy: , limitedBy)
  3. Put the String's startIndex in i
  4. Put the String's endIndex in limitedBy
- 5. Put how far into the String we need to go in offsetBy *
+ 5. Put how far into the String we need to go in offsetBy -- Strings start counting at 0, so it will always be one less than you think
  6. Force or safely unwrap the value
  7. Close the bracket -- ]
  
- * Strings start counting at 0, so it will always be one less than you think
  */
 
 print(petTheDogAgain)
@@ -331,7 +330,7 @@ print(properStringArray[8] + "is the same dog, but stringy")
 
 properStringArray[8] == String(certainCharacter)
 
-// This is a simpler way to access things inside Strings...but you need the other way for the exam.
+// This is a simpler way to access things inside Strings...but you might need to demonstrate the other way to prove your chops.
 
 type(of: properStringArray)
 type(of: accessThis.characters)
@@ -406,7 +405,7 @@ display(dictionary: newDictionary)
 /*
  A function is a chunk of code that we pre-define so we can use it later.
  
- Functions can have a parameters, or named variables inside parentheses.
+ Functions can have parameters: named variables inside parentheses.
  We use parameters to tell the function what it should be doing something to.
  */
 
@@ -426,12 +425,12 @@ buildMeAPyramid(of: doom)
 
 // We can give our parameters internal names we only use within the function, to make our code more explicit
 
-func swap(this: Int, forThat that: Int, inside array: [Int]) -> [Int] {
+func swap(this numberWeNeedToChange: Int, forThat numberWereReplacingFirstOneWith: Int, inside array: [Int]) -> [Int] {
     var swappedArray = [Int]()
     
     for number in array {
-        if number == this {
-            swappedArray.append(that)
+        if number == numberWeNeedToChange {
+            swappedArray.append(numberWereReplacingFirstOneWith)
         } else {
             swappedArray.append(number)
         }
@@ -442,7 +441,7 @@ func swap(this: Int, forThat that: Int, inside array: [Int]) -> [Int] {
 
 let freshNewArray = swap(this: 1, forThat: 0, inside: [1,1,1,1,1,0,0,1,1,1,1,1])
 
-// Our functions can have multiple parameters. They can have return statements. Returns allow us to store the result of the function in a variable
+// Our functions can have multiple parameters. They can also have return statements. Returns allow us to store the result of the function in a variable
 
 func happyCatsOnly(_ array: [String]) -> Bool {
     for element in array {
