@@ -12,3 +12,5 @@ The Playground provides a swift overview of:
 * Strings, characters & unicode
 * Arrays & dictionaries
 * Functions & guard
+
+...with optionals covered along the way
