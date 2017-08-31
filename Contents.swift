@@ -8,10 +8,10 @@ import UIKit
  When we import UIKit or Foundation, we're telling XCode "go fetch this
  code someone else wrote so we can use it for ourselves".
  
- Foundation contains many basic things, like pow() for raising numbers 
+ Foundation contains many basic things, like pow() for raising numbers
  to a power.
  
- UIKit is Foundation plus some other goodies, many of which are used 
+ UIKit is Foundation plus some other goodies, many of which are used
  for making apps look better or run better, like UIView.
  */
 
@@ -40,7 +40,7 @@ numberOne == 1
 let numberTwo: Int = 2
 let numberTwoPointOh: Double = 2.0
 let numberTwoPointUhOh: Float = 2.00
- 
+
 // You can't directly compare different types, but you can convert one into another to compare them.
 
 numberTwo == Int(numberTwoPointOh)
@@ -137,21 +137,41 @@ let newRange = 1...5
 
 // Ranges are their own type
 
+for number in newRange {
+    if number == 3 {
+        continue
+    }
+    
+    print(number)
+}
+
+// We can skip over parts of a loop and go back to the top using continue
+
+for number in newRange {
+    if number == 3 {
+        break
+    }
+    
+    print(number)
+}
+
+// We can end a loop early using break
+
 let anotherRange = 20..<31
 
 // If we have ..< instead of ... in between the ends of our range, we're saying, 'stop one number before you hit the upper end'
 
-// The ends must be whole numbers if we want to loop over the range. 
+// The ends must be whole numbers if we want to loop over the range.
 
 // Remove the /* */ around the next lines to test out a range that was made incorrectly for looping. Try to fix it.
 
 /*
-let decimalRange = 1.0...5.0
-
-for number in decimalRange {
-    print(number)
-}
-*/
+ let decimalRange = 1.0...5.0
+ 
+ for number in decimalRange {
+ print(number)
+ }
+ */
 
 let newOne: Int = 1
 let noNegativeOnes: UInt = 1
@@ -252,7 +272,7 @@ let nerdyString: String = "\u{1F47D}"
 
 print("This is an emoji combined with a skin tone code: \u{1F467}" + "\u{1F3FE}")
 let oneWayToSaySpanish = "espa" + "\u{00F1}" + "ol"
-let anotherWay = "espan" + "\u{0303}" + "ol"
+let anotherWay = "espa" + ("n" + "\u{0303}") + "ol"
 
 // We can combine Unicode for emoji with different skin tones, or for characters and marks that aren't found in the English alphabet
 
@@ -351,7 +371,7 @@ var newDictionary: [Double: String] = [3.14: "I'm a piece of pi!"]
 
 print(newDictionary[3.14]!)
 
-// Values inside a dictionary are optional. 
+// Values inside a dictionary are optional.
 
 newDictionary[12.00000001]
 
@@ -388,7 +408,7 @@ display(dictionary: newDictionary)
  
  Functions can have a parameters, or named variables inside parentheses.
  We use parameters to tell the function what it should be doing something to.
-*/
+ */
 
 let doom: String = "☠️"
 
