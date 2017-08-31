@@ -188,6 +188,31 @@ sqrt(256) // Gives you the square root of 256
 
 // let itsComplicated: UInt16 = numberTwo * (numberTwoPointOh + numberTwoPointUhOh) - bigInt
 
+var questionableInt: Int?
+
+questionableInt = 10
+
+// Optionals look like Type declarationss with a ? on the end. They can contain either a value of the correct Type...
+
+questionableInt = nil
+
+//...or a special value signifying absence, called nil
+
+questionableInt = 11
+print(questionableInt)
+
+// If we put something inside an Optional, we have to 'unwrap' it, or take out its contents, before we use it. If we don't, we get some weird results warning us we have an optional
+
+print(questionableInt!)
+
+// We can use the ! symbol to unwrap things. This is called force-unwrapping, because we're telling the computer to use whatever is inside the Optional, even if it is nil
+
+questionableInt = nil
+
+// Uncomment the next line to see why force-unwrapping is a bad idea if we have a nil
+
+// print(questionableInt!)
+
 let newInt = Int("10")
 
 // We can create new Ints with Strings...but the result is an Optional!
