@@ -46,7 +46,7 @@ let numberTwoPointUhOh: Float = 2.00
 numberTwo == Int(numberTwoPointOh)
 Double(numberTwoPointUhOh) == numberTwoPointOh
 
-// When we compare two things or make a conditional, the result is a bool.
+// When we compare two things or make a conditional, the result is a Bool.
 
 trueOrFalse = true
 trueOrFalse = false
@@ -57,7 +57,7 @@ trueOrFalse = 20 >= 21
 
 trueOrFalse = !trueOrFalse
 
-// The ! symbol means 'not'. When used in front of a value, it negates it (makes it the opposite bool)
+// The ! symbol means 'not'. When used in front of a value, it negates it (makes it the opposite Bool)
 
 trueOrFalse = 10 < 1000 && 20 >= 21
 trueOrFalse = 10 < 1000 && 1000 < 1001
