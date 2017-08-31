@@ -229,7 +229,7 @@ if let ten = newInt {
     print("That's not a number in there.")
 }
 
-// We can force unwrap Optionals, or safely unwrap them and handle the nils
+// We can safely unwrap Optionals with if let syntax. This stores the value in a temporary variable if a value of the correct Type is in there. The else allows us to handle the nils
 
 var tenTenWins: Int
 tenTenWins = newInt ?? 1010
