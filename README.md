@@ -17,10 +17,9 @@ The Playground provides a swift overview of:
 * Var vs let
 * Bools & logical operators
 * Syntax for if/else and switch
-* For-in and while loops
+* For-in & while loops
 * Ints, floats, & doubles
+* Optionals
 * Strings, characters & unicode
 * Arrays & dictionaries
 * Functions & guard
-
-...with optionals covered along the way
