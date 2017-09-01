@@ -1,15 +1,19 @@
 # swiftBasics
 A Swift playground covering basics for code newbies
 
-To use -- 
+## To use 
 
-**Note: You need XCode. Download it for free from iTunes: https://itunes.apple.com/us/app/xcode/id497799835?mt=12**
+**Note: You need XCode to use this. Download it for free from iTunes: https://itunes.apple.com/us/app/xcode/id497799835?mt=12**
 
-Hit the download button on the top, and select download as .zip. Open the zip file to get a folder containing the Playground and supporting files. Open in Desktop is for if you have Github Desktop.
+Hit the download button on the top, and select download as .zip. Open the zip file to get a folder containing the Playground and supporting files. 
 
-or
+*or*
 
 Go to the file Contents.Swift and copy/paste directly into an open Playground
+
+(Open in Desktop is for if you have Github Desktop. You probably don't, at this point.)
+
+---
 
 The Playground provides a swift overview of:
 
