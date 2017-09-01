@@ -1,5 +1,5 @@
 # swiftBasics
-A Swift playground covering basics for code newbies
+A Swift Playground covering basics for code newbies.
 
 ## To use 
 
@@ -9,7 +9,7 @@ Hit the download button on the top, and select download as .zip. Open the zip fi
 
 *or*
 
-Go to the file Contents.Swift and copy/paste directly into an open Playground
+Go to the file Contents.Swift and copy/paste directly into an open Playground.
 
 (Open in Desktop is for if you have Github Desktop. You probably don't, at this point.)
 
@@ -27,3 +27,5 @@ The Playground provides a swift overview of:
 * Strings, characters & unicode
 * Arrays & dictionaries
 * Functions & guard
+
+**If you like this Playground and are feeling generous, give me a tip at paypal.me/martyav!** 
