@@ -496,7 +496,7 @@ func transformMyLetter(letter: String) -> String {
 
 let transformedLetter = transformMyLetter(letter: "a")
 
-// We can use it to solve the decoding problem from Monday, because returning gives us a value we can use in other places
+// We can use it to decode secret messages, because returning gives us a value we can use in other places
 
 let codedMessage = "rdbqds"
 var decodedMessage = ""
